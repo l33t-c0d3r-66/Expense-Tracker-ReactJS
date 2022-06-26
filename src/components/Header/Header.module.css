@@ -1,0 +1,38 @@
+.Header {
+    width: 100%;
+    margin:auto;
+}
+
+.HeaderContainer {
+    display: flex;
+    background-color: rgb(41, 133, 238);
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.Logo{
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+    font-weight: 500;
+    color: white;
+    margin: 10px 20px;
+}
+
+.Logo img{
+    width: 70px;
+}
+
+@media only screen  and (max-width: 1024px){
+    .Header{
+        width: 100;
+    }
+
+    .Logo{
+        font-size: 100%;
+    }
+    .Logo img{
+        width: 50px;
+    }
+}

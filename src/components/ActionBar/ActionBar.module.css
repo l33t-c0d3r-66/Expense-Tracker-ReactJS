@@ -1,0 +1,54 @@
+.ActionBar {
+    margin-top: 1rem;
+    padding-bottom: 0;
+}
+
+.ActionBar button{
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    color: rgb(0, 162, 255);
+    border: 2px solid rgb(0, 162, 255);
+    padding: 0.45rem 0.8rem;
+    display: inline-block;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    font-size: 0.8rem;
+    background: transparent;
+    border-radius: 0.25rem;
+    display: inline-block;
+    margin: 20px auto;
+    align-items: right;
+    justify-content: right;
+}
+
+.ActionBar button:hover{
+    background: rgb(0, 162, 255);
+    color: #fff;
+}
+.Action {
+    width: 85vw;
+    margin: 0 auto;
+    max-width: 40rem;
+    background: #fff;
+    padding: 2rem 2.5rem;
+    text-transform: capitalize;
+    border-radius: 0.25rem;
+    box-shadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+}
+
+.FormControl label {
+    display: block;
+    margin-bottom: 1.25rem;
+    font-weight: bold;
+    letter-spacing: 0.25rem;
+    color: #55c8eb;
+  }
+  .FormControl input, select {
+    width: 100%;
+    border: none;
+    border-color: transparent;
+    background: #f1f5f8;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+  }
