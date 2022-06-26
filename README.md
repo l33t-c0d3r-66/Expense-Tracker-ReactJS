@@ -1,4 +1,10 @@
-# Getting Started with Create React App
+## Expense Tracker ReactJS
+<li> This is a web application created with React JS and Local Storage.
+<li> This application uses functional components approach.
+<li> React Redux is used for global state management.
+<li> Hooks used in this projects are useRef, useHistory, useDispatch, and useSelector 
+  
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -68,3 +74,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  
+  
+## Project Screenshots
+ 
+<img src="https://github.com/l33t-c0d3r-66/Expense-Tracker-ReactJS/blob/master/screenshots/ss1.PNG">
+  
+<img src="https://github.com/l33t-c0d3r-66/Expense-Tracker-ReactJS/blob/master/screenshots/ss2.PNG">
+  
+<img src="https://github.com/l33t-c0d3r-66/Expense-Tracker-ReactJS/blob/master/screenshots/ss3.PNG">
