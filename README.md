@@ -1,4 +1,4 @@
-## Expense Tracker ReactJS
+# Expense Tracker ReactJS
 <li> This is a web application created with React JS and Local Storage.
 <li> This application uses functional components approach.
 <li> React Redux is used for global state management.
