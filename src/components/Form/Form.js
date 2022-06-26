@@ -4,6 +4,7 @@ function Form(props) {
 
     const titleInputRef = useRef("");
     const amountInputRef = useRef(0);
+    const searchInputRef = useRef("");
 
     const submitForm = (event) =>{
         event.preventDefault();
@@ -21,7 +22,9 @@ function Form(props) {
             };
 
             props.handleFormSubmit(data);
-        } 
+        } else if(props.type === "search"){
+            props.handleFormSubmit(searchInputRef.current.value);
+        }
     }
 
 
@@ -55,7 +58,7 @@ function Form(props) {
         form = (
             <div className={cssClasses.FormControl}>
                 <label htmlFor='name'>Search for Expense</label>
-                <input type="text" id="name"/>
+                <input type="text" id="name" ref={searchInputRef} onChange={submitForm}/>
             </div>
         );
     }

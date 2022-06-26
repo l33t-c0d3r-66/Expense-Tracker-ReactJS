@@ -5,7 +5,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
+    width: 80%;
     color: rgb(99, 162, 233);
     border: 2px solid rgb(0, 162, 255);
     border-radius: 5px;
@@ -19,7 +19,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
+    width: 80%;
     color: white;
     border: 2px solid rgb(0, 162, 255);
     border-radius: 5px;

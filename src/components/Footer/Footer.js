@@ -1,7 +1,7 @@
+import cssClasses from './Footer.module.css';
 function Footer () {
     return (
-        <div>Footer</div>
+        <footer className={cssClasses.Footer}>An Application to Track Expenses</footer>
     );
 }
-
 export default Footer;

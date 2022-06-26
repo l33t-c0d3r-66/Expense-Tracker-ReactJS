@@ -1,10 +1,11 @@
 .ExpenseList {
-    margin: 30px auto;
+    margin: 20px auto;
     display: flex;
     flex-direction: column;
     flex: 1;
-    width: 80%;
+    width: 60%;
     box-shadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+    max-width: 80%;
 }
 
 .ExpenseList h1{

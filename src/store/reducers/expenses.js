@@ -1,21 +1,46 @@
 import * as actionTypes from '../actions/actionTypes';
+
+const loader = () =>  {
+    const expenseList = localStorage.getItem("expenses");
+    let expenses = [];
+    if(expenseList) {
+        expenses = JSON.parse(expenseList);
+    }
+    return expenses;
+}
+
 const initialState = {
-    expenseList: []
+    expenseList: loader(),
+    title : ""
 };
+
+const saveData = (state, action) => {
+    localStorage.setItem("expenses", JSON.stringify([...state.expenseList, action.data]));
+    return {
+        ...state,
+        expenseList: [...state.expenseList, action.data]
+    };
+}
+
+const deleteData = (state, action) => {
+    localStorage.setItem("expenses", JSON.stringify(state.expenseList.filter(item => item.createdAt !== action.data.createdAt)));
+    return {
+        ...state,
+        expenseList: state.expenseList.filter(item => item.createdAt !== action.data.createdAt) 
+    }
+}
 
 const expenseReducer = (state = initialState, action) => {
     switch(action.type) {
         case actionTypes.ADD_EXPENSE:
-            return {
-                ...state,
-                expenseList: [...state.expenseList, action.data]
-            };
+            return saveData(state, action);
         case actionTypes.DELETE_EXPENSE:
+            return deleteData(state,action);
+        case actionTypes.SEARCH_EXPENSE:
             return {
                 ...state,
-                expenseList: state.expenseList.filter(item => item.createdAt !== action.data.createdAt) 
+                title: action.title
             }
-        break;
         default:
             return state;
     }

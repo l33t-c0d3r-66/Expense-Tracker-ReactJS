@@ -26,9 +26,9 @@
     color: #fff;
 }
 .Action {
-    width: 85vw;
+    width: 60%;
     margin: 0 auto;
-    max-width: 40rem;
+    max-width: 80%;
     background: #fff;
     padding: 2rem 2.5rem;
     text-transform: capitalize;

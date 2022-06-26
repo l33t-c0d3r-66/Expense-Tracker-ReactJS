@@ -10,8 +10,7 @@ function Expense (props) {
     const deleteHandler = () => {
         dispatch(actions.deleteExpense(props.item));
     }
-
-
+    
     return (
         <div className={cssClasses.Expense}>
             <div className={cssClasses.Info}>

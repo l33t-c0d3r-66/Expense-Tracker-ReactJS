@@ -1,4 +1,5 @@
 export {
     addExpense,
-    deleteExpense
+    deleteExpense,
+    searchExpense
 } from './expenses';

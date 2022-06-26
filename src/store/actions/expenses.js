@@ -12,3 +12,10 @@ export const deleteExpense = (data) => {
         data: data
     };
 }
+
+export const searchExpense = (title) => {
+    return {
+        type: actionTypes.SEARCH_EXPENSE,
+        title: title
+    }
+}

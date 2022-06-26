@@ -11,7 +11,10 @@ function ActionBar () {
     const handleAddFormSubmit = (data) => {
         dispatch(actions.addExpense(data));
         history.replace("/");
-        
+    }
+
+    const handleSearch = (title) => {
+        dispatch(actions.searchExpense(title));
     }
 
     let render = null;
@@ -21,7 +24,7 @@ function ActionBar () {
                 <Link to="/add">
                     <button>Add Expense</button>
                 </Link>
-                <Form type="search"/>
+                <Form type="search" handleFormSubmit={handleSearch}/>
             </div>
         );
     } else {
