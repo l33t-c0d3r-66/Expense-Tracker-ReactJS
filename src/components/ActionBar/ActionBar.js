@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import cssClasses from './ActionBar.module.css';
+import Form from '../Form/Form';
 function ActionBar () {
 
     let render = null;
@@ -9,12 +10,7 @@ function ActionBar () {
                 <Link to="/add">
                     <button>Add Expense</button>
                 </Link>
-                <form>
-                    <div className={cssClasses.FormControl}>
-                        <label htmlFor='name'>Search for Expense</label>
-                        <input type="text" id="name"/>
-                    </div>
-                </form>
+                <Form type="search"/>
             </div>
         );
     } else {
@@ -23,25 +19,7 @@ function ActionBar () {
                 <Link to="/">
                     <button>Back</button>
                 </Link>
-                <form>
-                    <div className={cssClasses.FormControl}>
-                        <label htmlFor='title'>Title</label>
-                        <input type="text" id="title"/>
-                    </div>
-                    <div className={cssClasses.FormControl}>
-                        <label htmlFor='amount'>Amount</label>
-                        <input type="number" id="amount"/>
-                    </div>
-                    <div className={cssClasses.FormControl}>
-                        <label htmlFor='category'>Category</label>
-                        <select id="category">
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
-
-                        </select>
-                    </div>
-                </form>
+                <Form type="add"/>
             </div>
         );
     }

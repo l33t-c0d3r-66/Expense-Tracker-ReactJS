@@ -35,20 +35,3 @@
     border-radius: 0.25rem;
     box-shadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
 }
-
-.FormControl label {
-    display: block;
-    margin-bottom: 1.25rem;
-    font-weight: bold;
-    letter-spacing: 0.25rem;
-    color: #55c8eb;
-  }
-  .FormControl input, select {
-    width: 100%;
-    border: none;
-    border-color: transparent;
-    background: #f1f5f8;
-    border-radius: 0.25rem;
-    padding: 0.5rem;
-    font-size: 1.2rem;
-  }

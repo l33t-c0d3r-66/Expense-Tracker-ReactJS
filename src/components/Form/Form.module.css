@@ -1,0 +1,29 @@
+
+.FormControl label {
+    display: block;
+    margin-bottom: 1.25rem;
+    font-weight: bold;
+    letter-spacing: 0.25rem;
+    color: #55c8eb;
+  }
+  .FormControl input, select {
+    width: 100%;
+    border: none;
+    border-color: transparent;
+    background: #f1f5f8;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+  }
+
+  .FormControlSelect {
+    width: 100%;
+    border: none;
+    border-color: transparent;
+    background: #f1f5f8;
+    border-radius: 0.25rem;
+    color: #37bfe9;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    font-family: 'FontAwesome', 'san-serif';
+  }
