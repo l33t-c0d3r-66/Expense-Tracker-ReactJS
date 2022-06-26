@@ -1,6 +1,5 @@
-import { act } from 'react-dom/test-utils';
 import * as actionTypes from './actionTypes';
-export const AddExpense = (data) => {
+export const addExpense = (data) => {
     return {
         type: actionTypes.ADD_EXPENSE,
         data: data

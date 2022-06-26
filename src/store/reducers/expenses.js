@@ -8,17 +8,17 @@ const expenseReducer = (state = initialState, action) => {
         case actionTypes.ADD_EXPENSE:
             return {
                 ...state,
-                expenseList: state.expenseList.concat(action.data)
+                expenseList: [...state.expenseList, action.data]
             };
-        break;
         case actionTypes.DELETE_EXPENSE:
-
+            return {
+                ...state,
+                expenseList: state.expenseList.filter(item => item.createdAt !== action.data.createdAt) 
+            }
         break;
         default:
             return state;
-        break;
     }
-    return state;
 }
 
 export default expenseReducer;

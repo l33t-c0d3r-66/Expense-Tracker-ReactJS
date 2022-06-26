@@ -1,0 +1,59 @@
+.Expense {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    color: rgb(99, 162, 233);
+    border: 2px solid rgb(0, 162, 255);
+    border-radius: 5px;
+    box-shadow: 1px 3px 1px 0px rgba(41, 133, 238, 0.2);
+}
+
+.Expense:hover {
+    background-color: rgb(41, 133, 238);
+    padding: 20px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    color: white;
+    border: 2px solid rgb(0, 162, 255);
+    border-radius: 5px;
+    box-shadow: 1px 3px 1px 0px rgba(41, 133, 238, 0.2);
+}
+
+.Info{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin-left: 12px;
+}
+
+.Title{
+    font-size: 20px;
+}
+
+.Time{
+    color: rgb(65, 54, 54);
+    font-size: 12px;
+}
+
+.Right {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.Amount {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.Delete {
+    font-family: 'FontAwesome';
+}
