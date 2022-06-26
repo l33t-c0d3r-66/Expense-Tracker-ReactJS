@@ -9,7 +9,7 @@ function ExpenseList () {
         <div className={cssClasses.ExpenseList}>
             <h1>Expenses</h1>
             {filteredList.length>0?filteredList.map((item, index) => {
-                return <Expense key={index} item={item} />
+                return <Expense key={item.created} item={item} />
             }):<h3 style={{textAlign:'center'}}>No Expenses in List</h3>}
         </div>
     );

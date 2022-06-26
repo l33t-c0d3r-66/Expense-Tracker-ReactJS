@@ -12,7 +12,7 @@ function Form(props) {
             const title = titleInputRef.current.value;
             const amount = amountInputRef.current.value;
             const categorySelect = document.getElementById("category");
-            const category = categorySelect.options[categorySelect.selectedIndex].text;
+            const category = categorySelect.value;
 
             const data = {
                 title,
@@ -44,11 +44,11 @@ function Form(props) {
                 <div className={cssClasses.FormControl}>
                     <label htmlFor='category'>Category</label>
                     <select id="category" className={cssClasses.FormControlSelect}>
-                        <option value="education"> &#xf549;  Education</option>
-                        <option value="health-care"> &#xf0f8; Health-Care</option>
-                        <option value="shopping"> &#xf290; Shopping</option>
-                        <option value="food"> &#xf81f; Food</option>
-                        <option value="others"> &#xf555; Others</option>
+                        <option value="Education"> &#xf549;  Education</option>
+                        <option value="Health-Care"> &#xf0f8; Health-Care</option>
+                        <option value="Shopping"> &#xf290; Shopping</option>
+                        <option value="Food"> &#xf81f; Food</option>
+                        <option value="Others"> &#xf555; Others</option>
                     </select>
                 </div>
                 <button>Add Expense</button>

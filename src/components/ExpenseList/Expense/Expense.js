@@ -4,7 +4,7 @@ import { BsFillTrashFill } from "react-icons/bs";
 import { useDispatch } from 'react-redux';
 import * as actions from '../../../store/actions/index';
 function Expense (props) {
-    const time = moment(props.item.createdAt).fromNow();
+    const time = moment(props.item.created).fromNow();
     const dispatch = useDispatch();
 
     const deleteHandler = () => {
@@ -14,7 +14,9 @@ function Expense (props) {
     return (
         <div className={cssClasses.Expense}>
             <div className={cssClasses.Info}>
-                <div className={cssClasses.Title}>{props.item.title}</div>
+                <div className={cssClasses.Title}>
+                    {props.item.title} ({props.item.category})
+                </div>
                 <div className={cssClasses.Time}>{time}</div>
             </div>
             <div className={cssClasses.Right}>

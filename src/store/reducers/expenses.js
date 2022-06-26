@@ -23,11 +23,11 @@ const saveData = (state, action) => {
 }
 
 const deleteData = (state, action) => {
-    localStorage.setItem("expenses", JSON.stringify(state.expenseList.filter(item => item.createdAt !== action.data.createdAt)));
+    localStorage.setItem("expenses", JSON.stringify(state.expenseList.filter(item => item.created !== action.data.created)));
     return {
         ...state,
-        expenseList: state.expenseList.filter(item => item.createdAt !== action.data.createdAt) 
-    }
+        expenseList: loader()
+    };
 }
 
 const expenseReducer = (state = initialState, action) => {
